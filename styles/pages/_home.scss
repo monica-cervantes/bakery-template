@@ -1,0 +1,21 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+  transition: all .2s ease-in-out;
+  
+  .section-intro {
+    padding: 40px 0;
+
+    .starter {
+      width: 100%;
+
+      text-align: center;
+    }
+  }
+}
+
+

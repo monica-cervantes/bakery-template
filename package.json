@@ -1,0 +1,22 @@
+{
+  "name": " ",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "sass": "sass --watch styles:styles --style compressed",
+    "build": "parcel build index.html",
+    "start": "live-server --port=3000",
+    "dev": "npm-run-all -p sass start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.57.1"
+  }
+}
