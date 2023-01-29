@@ -4,4 +4,11 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
-@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+@include font-face($font-alegreya, $base-url + 'fonts/', 'alegreya-bold', 'alegreya-bold', 700);
+@include font-face($font-alegreya, $base-url + 'fonts/', 'alegreya-regular', 'alegreya-regular', 400);
+
+@include font-face($font-playfairdisplay, $base-url + 'fonts/', 'playfairdisplay-bold', 'playfairdisplay-bold', 700);
+
+@include font-face($font-proxima-nova, $base-url + 'fonts/', 'proxima-nova', 'proxima-nova', 400);
+
+@include font-face($font-scriptina, $base-url + 'fonts/', 'scriptina', 'scriptina', 400);
