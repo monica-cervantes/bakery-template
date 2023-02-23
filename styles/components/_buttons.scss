@@ -3,3 +3,46 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  padding: 14px 48px;
+
+  color: $white;
+  font-family: $font-alegreya;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  background-color: rgba(52,52,52,.45);
+  border: 1px dashed rgba(129,127,127,.7);
+}
+
+.btn-secondary {
+  padding: 11px 70px;
+
+  color: $brown;
+  font-size: 19px;
+  letter-spacing: 1px;
+
+  background-color: transparent;
+  border: 1px solid $dawn;
+}
+
+.btn-light {
+  padding: 16px 28px;
+
+  color: $lightest-brown;
+  font-family: $font-alegreya;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+
+  background-color: $white;
+  border: 1px dashed $lightest-brown;
+}

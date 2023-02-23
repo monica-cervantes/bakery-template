@@ -3,3 +3,90 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+
+  background-color: rgba(52,52,52,.45);
+
+  transition: all linear .3s;
+
+  * {
+    transition: all linear .3s;
+  }
+
+  &.scrolled {
+    background-color: $white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+
+    .navbar-brand {
+      color: $grey;
+    }
+
+    .nav-link {
+      color: $grey;
+    }
+
+    .nav-item {
+      &:not(:last-child) {
+        &:after { 
+          color: $grey;
+        }
+      }
+    }
+
+    .fa-brands {
+      color: $grey;
+    }
+  }
+
+  .navbar-brand {
+    margin-right: 58px;
+  }
+
+  .nav-link {
+    color: $white;
+    font-family: $font-alegreya;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .nav-item {
+    position: relative;
+
+    padding: 0 34px;
+
+    &:not(:last-child) {
+      &:after {
+        content: '~';
+    
+        position: absolute;
+        top: 5px;
+        right: -1px;
+        z-index: 99;
+  
+        color: $white;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .social-link {
+    text-decoration: none;
+    
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+  }
+
+  .fa-brands {
+    color: $white;
+  }
+}

@@ -9,9 +9,11 @@ $font-alegreya: 'Alegreya';
 $font-playfairdisplay: 'Playfair Display';
 $font-proxima-nova: 'Proxima Nova';
 $font-scriptina: 'Scriptina';
+$font-arial: 'Arial', sans-serif;
+$font-timesnewroman: 'Times New Roman', sans-serif;
 
 /// @type List
-$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: $font-alegreya, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -42,3 +44,25 @@ $dark-grey: #444 !default;
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '../assets/' !default;
+
+/// sites colors
+$dark-grey: #5a5750;
+$grey: #56534c;
+$another-grey: #979285;
+$mid-grey: #aaa8a4;
+$light-grey: #d7d5ca;
+$grey-shadows: #c2beba;
+$grey-roads: #c3bfbb;
+$dawn: #9e9c93;
+$rare-grey: #a6a49b;
+$back-grey: #b1afa7;
+
+$latte: #f3f1e9;
+$weathered-white: #e5e3d9;
+$soft-secret: #d5d3cb;
+
+$brown: #a47d5e;
+$another-brown: #c8a593;
+$mid-brown: #aa8669;
+$light-brown: #d8bba3;
+$lightest-brown: #dfc691;

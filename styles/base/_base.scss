@@ -45,6 +45,14 @@ input[type="text"] {
   }
 }
 
+/**
+ * Basic styles for images
+ */
+
+ img {
+  width: 100%;
+ }
+
 //styles for navbar-toggler
 .navbar-toggler {
   padding: 10px 0;
@@ -114,3 +122,10 @@ input[type="text"] {
   box-sizing: border-box;
   -webkit-animation: rotation 1s linear infinite;
   animation: rotation 1s linear infinite; }
+
+  .logo {
+    color: $white;
+    font-family: $font-scriptina;
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
