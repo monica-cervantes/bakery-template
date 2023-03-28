@@ -25,3 +25,32 @@
     margin-bottom: 0;
   }
 }
+
+@include respond-to("lg-down") {
+  .prep-wrapper {
+    top: -80px;
+    right: -28px;
+  }
+
+  .duration-wrapper {
+    padding: 20px 0;
+    width: 160px;
+    height: 160px;
+
+    .subheading3 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include respond-to("md-down") {
+  .prep-wrapper {
+    top: -89px;
+    right: -27px;
+  }
+
+  .duration-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+}

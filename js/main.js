@@ -6,9 +6,15 @@ $(window).on('load', function() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    spaceBetween: 10,
+    spaceBetween: 5,
     slidesPerView: 3,
     watchSlidesProgress: true,
+    breakpoints: {
+      992: {
+        spaceBetween: 10,
+        slidesPerView: 3
+      }
+    }
   });
   
   var mainSwiper = new Swiper(".MainSwiper", {

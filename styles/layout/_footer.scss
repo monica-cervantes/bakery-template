@@ -44,6 +44,10 @@ footer {
     font-size: 14px;
     letter-spacing: 4px;
     text-transform: uppercase;
+
+    @include on-event() {
+      text-decoration: none;
+    }
   }
   
   .logo-wrapper {
@@ -67,4 +71,12 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+@media (min-width: 1200px) and (max-width: 1250px) {
+  footer li { padding: 10px 30px; }
+}
+
+@include respond-to("lg-down") {
+  footer li { padding: 10px 12px; }
 }

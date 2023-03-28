@@ -26,6 +26,10 @@ header {
 
     .navbar-brand {
       color: $grey;
+
+      @include on-event() {
+        color: $grey;
+      }
     }
 
     .nav-link {
@@ -43,10 +47,23 @@ header {
     .fa-brands {
       color: $grey;
     }
+
+    .navbar-toggler {
+      .icon-bar {
+        background: $grey;
+      }
+    }
   }
 
   .navbar-brand {
+    position: relative;
+    top: -5px;
+
     margin-right: 58px;
+
+    @include on-event() {
+      color: $white;
+    }
   }
 
   .nav-link {
@@ -88,5 +105,55 @@ header {
 
   .fa-brands {
     color: $white;
+  }
+
+  .navbar-toggler {
+    .icon-bar {
+      height: 2px;
+
+      background: #fff;
+    }
+
+    &[aria-expanded=true] {
+      .icon-bar {
+        &:first-child {
+          transform: rotate(225deg) translate(-3px, -3px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1250px) {
+  header .nav-item { padding: 0 25px; }
+}
+
+@include respond-to("lg-down") {
+  header {
+    .navbar-brand { margin-right: 25px; }
+
+    .nav-item { padding: 0 15px; }
+
+    .social-link:not(:last-child) { margin-right: 12px; }
+  }
+}
+
+@include respond-to("md-down") {
+  header {
+    .nav-item:not(:last-child):after {
+      display: none;
+    }
+
+    .navbar-collapse {
+      padding-top: 15px;
+    }
+
+    .navbar-nav {
+      padding-bottom: 15px;
+    }
+
+    .socials {
+      padding-left: 15px;
+    }
   }
 }

@@ -96,6 +96,12 @@ body {
   font-size: 26px;
 }
 
-.text4 {
-
+@include respond-to("md-down") {
+  .heading2 {
+    font-size: 35px;
+  }
+  
+  .heading4 {
+    font-size: 70px;
+  }
 }

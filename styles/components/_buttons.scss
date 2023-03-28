@@ -6,6 +6,30 @@
 
 .btn {
   border-radius: 0;
+
+  @include on-event() {
+    color: $white;
+    text-decoration: none;
+
+    background-color: $grey;
+    border-color: $mid-grey;
+
+    outline: none;
+  }
+
+  &:not(:disabled):not(.disabled):active {
+    color: $white;
+    text-decoration: none;
+
+    background-color: $grey;
+    border-color: $mid-grey;
+    
+    outline: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
 
 .btn-primary {
@@ -27,6 +51,7 @@
 
   color: $brown;
   font-size: 19px;
+  font-weight: 700;
   letter-spacing: 1px;
 
   background-color: transparent;
