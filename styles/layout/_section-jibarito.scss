@@ -1,0 +1,126 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the section jibarito of the site/application.
+// -----------------------------------------------------------------------------
+
+.section-jibarito {
+  padding-top: 88px;
+
+  background-color: $latte;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .title-wrapper {
+    position: relative;
+
+    flex: 0 0 100%;
+  }
+
+  .windmill {
+    content: url('../../assets/img/windmill.png');
+
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    z-index: 1;
+
+    transform: translateX(-50%);
+  }
+
+  .heading2,
+  .subheading2 {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+  }
+
+  .heading2 {
+    margin-bottom: 4px;
+  }
+
+  .heading5 {
+    margin-bottom: 16px;
+
+    color: $brown;
+    font-size: 29px;
+    letter-spacing: 1px;
+  }
+
+  .subheading2 {
+    margin-bottom: 0;
+  }
+
+  .text1 {
+    max-width: 300px;
+
+    color: $grey;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .custom-columns {
+    flex: 0 0 25%;
+
+    &:last-child {
+      display: flex;
+      align-items: center;
+      flex: 0 0 66.6667%;
+    }
+  }
+
+  .ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 37px;
+
+    img {
+      margin-bottom: 19px;
+      width: 100px;
+    }
+  }
+
+  .img-wrapper {
+    position: relative;
+  }
+
+  .btn-light {
+    position: absolute;
+    bottom: -18px;
+    left: -22px;
+  }
+
+  .prep-wrapper {
+    top: -23px;
+    right: 10px;
+  }
+
+  .duration-wrapper {
+    &:first-child {
+      margin-bottom: 1px;
+    }
+
+    &:not(:last-child) {
+      padding-top: 45px;
+
+      background: rgba(255, 255, 255, .8);
+
+      .heading4 {
+        margin-bottom: 5px;
+        
+        color: $grey;
+        font-size: 59px;
+      }
+
+      .subheading3 {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

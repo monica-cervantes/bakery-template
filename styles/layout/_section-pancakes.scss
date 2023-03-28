@@ -1,0 +1,188 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the section pancakes of the site/application.
+// -----------------------------------------------------------------------------
+
+.section-pancakes {
+  padding: 100px 0 109px;
+  background-image: url('../../assets/img/pancakes-bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .slider-wrapper {
+    position: relative;
+
+    margin: auto;
+    max-width: 965px;
+    height: 511px;
+  }
+
+  .MainSwiper {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+
+    border: none;
+  
+    .swiper-slide {
+      display: flex;
+      padding: 0;
+
+      background: transparent;
+    }
+
+    .img-wrapper {
+      position: relative;
+
+      .ratings-wrapper {
+        position: absolute;
+        top: calc(50% - 74px);
+        left: 31px;
+        z-index: 99;
+      }
+
+      .fa-star {
+        display: block;
+
+        color: $white;
+
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      } 
+    }
+
+    .text-wrapper {
+      flex: 0 0 57%;
+      padding: 69px 63px;
+      width: 57%;
+      height: 100%;
+      
+      text-align: left;
+
+      background: $white url('../../assets/img/slider-text-bg.png') bottom right;
+      background-repeat: no-repeat;
+    }
+
+    .heading2 {
+      margin-bottom: 5px;
+    }
+
+    .subheading2 {
+      margin-bottom: 59px;
+    }
+  }
+
+  .thumbs-wrapper {
+    position: absolute;
+    bottom: 31px;
+    right: calc(585px - 50%);
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 67%;
+
+      height: 32px;
+      width: 32px;
+
+      border: 2px solid $dark-grey;
+      border-radius: 50%;
+
+      &:after {
+        color: $dark-grey;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      &.swiper-button-disabled {
+        border-color: $light-brown;
+
+        opacity: 1;
+
+        &:after {
+          color: $light-brown
+        }
+      }
+    }
+
+    .swiper-button-next {
+      right: -39px;
+
+      &:after {
+        margin-left: 3px;
+      }
+    }
+
+    .swiper-button-prev {
+      left: -39px;
+
+      &:after {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .ThumbsSwiper {
+    width: 348px;
+    height: 110px;
+
+    border: 0;
+
+    .swiper-slide {
+      padding: 10px;
+
+      background: transparent;
+
+      cursor: pointer;
+    }
+  }
+}
+
+@include respond-to("lg-down") {
+  .section-pancakes {
+    .slider-wrapper {
+      max-width: 900px;
+      height: 460px;
+    }
+
+    .thumbs-wrapper {
+      right: calc(531px - 50%);
+      bottom: 25px;
+    }
+  }
+}
+
+@include respond-to("md-down") {
+  .section-pancakes {
+    .slider-wrapper {
+      height: 365px;
+    }
+
+    .MainSwiper {
+      .subheading2,
+      .subheading3,
+      .subheading4 {
+        margin-bottom: 13px;
+      }
+
+      .text-wrapper {
+        padding: 60px 40px;
+      }
+    }
+
+    .ThumbsSwiper {
+      width: 270px;
+
+      .swiper-slide img {
+        width: 60px;
+      }
+    }
+
+    .thumbs-wrapper {
+      right: calc(407px - 50%);
+      bottom: 15px;
+    }
+  }
+}
