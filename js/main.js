@@ -7,11 +7,13 @@ $(window).on('load', function() {
       prevEl: ".swiper-button-prev",
     },
     spaceBetween: 5,
-    slidesPerView: 3,
+    slidesPerView: 2,
     watchSlidesProgress: true,
     breakpoints: {
       992: {
-        spaceBetween: 10,
+        spaceBetween: 10
+      },
+      400: {
         slidesPerView: 3
       }
     }

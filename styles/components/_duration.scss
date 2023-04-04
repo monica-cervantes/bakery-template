@@ -42,15 +42,3 @@
     }
   }
 }
-
-@include respond-to("md-down") {
-  .prep-wrapper {
-    top: -89px;
-    right: -27px;
-  }
-
-  .duration-wrapper {
-    width: 140px;
-    height: 140px;
-  }
-}

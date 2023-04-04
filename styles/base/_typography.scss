@@ -105,3 +105,18 @@ body {
     font-size: 70px;
   }
 }
+
+@include respond-to("xs") {
+  .heading1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+
+  .heading4 {
+    font-size: 40px;
+  }
+
+  .subheading3 {
+    font-size: 16px;
+  }
+}

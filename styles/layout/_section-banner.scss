@@ -35,3 +35,21 @@
     padding: 145px 0;
   }
 }
+
+@include respond-to("xs") {
+  .section-banner {
+    padding: 110px 0;
+
+    .heading1 {
+      margin-bottom: 36px;
+    }
+
+    .dashes {
+      margin-bottom: 36px;
+    }
+
+    .subheading1 {
+      margin-bottom: 25px;
+    }
+  }
+}
