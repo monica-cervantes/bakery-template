@@ -12624,7 +12624,7 @@ footer .logo:hover {
 .section-banner {
   padding: 264px 0 212px;
   text-align: center;
-  background-image: url("../../assets/img/banner-img.jpg");
+  background-image: url("../assets/img/banner-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12664,7 +12664,7 @@ footer .logo:hover {
 .section-breakfast {
   position: relative;
   padding: 77px 0 46px;
-  background-image: url("../../assets/img/breakfast-bg.jpeg");
+  background-image: url("../assets/img/breakfast-bg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12970,7 +12970,7 @@ footer .logo:hover {
 }
 .section-cakes {
   padding-bottom: 85px;
-  background-image: url("../../assets/img/cakes-bg.jpg");
+  background-image: url("../assets/img/cakes-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13112,7 +13112,7 @@ footer .logo:hover {
   flex: 0 0 100%;
 }
 .section-jibarito .windmill {
-  content: url("../../assets/img/windmill.png");
+  content: url("../assets/img/windmill.png");
   position: absolute;
   left: 50%;
   bottom: 35px;
@@ -13288,7 +13288,7 @@ footer .logo:hover {
 }
 .section-pancakes {
   padding: 100px 0 109px;
-  background-image: url("../../assets/img/pancakes-bg.jpeg");
+  background-image: url("../assets/img/pancakes-bg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13332,7 +13332,7 @@ footer .logo:hover {
   width: 57%;
   height: 100%;
   text-align: left;
-  background: #fff url("../../assets/img/slider-text-bg.png") bottom right;
+  background: #fff url("../assets/img/slider-text-bg.png") bottom right;
   background-repeat: no-repeat;
 }
 .section-pancakes .MainSwiper .heading2 {

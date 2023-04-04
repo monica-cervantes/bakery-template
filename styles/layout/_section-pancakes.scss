@@ -6,7 +6,7 @@
 
 .section-pancakes {
   padding: 100px 0 109px;
-  background-image: url('../../assets/img/pancakes-bg.jpeg');
+  background-image: url('../assets/img/pancakes-bg.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +62,7 @@
       
       text-align: left;
 
-      background: $white url('../../assets/img/slider-text-bg.png') bottom right;
+      background: $white url('../assets/img/slider-text-bg.png') bottom right;
       background-repeat: no-repeat;
     }
 
