@@ -11,7 +11,8 @@ $(window).on('load', function() {
     watchSlidesProgress: true,
     breakpoints: {
       992: {
-        spaceBetween: 10
+        spaceBetween: 10,
+        slidesPerView: 3
       },
       400: {
         slidesPerView: 3
